@@ -9,7 +9,7 @@ name: CI
   workflow_dispatch: null
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: macos-13
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
