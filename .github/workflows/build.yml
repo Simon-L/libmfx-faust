@@ -8,6 +8,8 @@ name: CI
       - main
   workflow_dispatch: null
 jobs:
+  call-workflow-passing-data:
+    uses: Simon-L/faust/.github/workflows/libfaust.yml@mfx-gh-actions
   build:
     runs-on: macos-13
     steps:
