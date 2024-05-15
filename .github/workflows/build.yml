@@ -21,5 +21,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - uses: actions/download-artifact@v4
+      - name: Display structure of downloaded files
+        run: ls -R
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
